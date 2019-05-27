@@ -3,6 +3,4 @@ import Box from '../models/Box'
 import IBoxModel from '../types/IBoxModel'
 
 export let getBoxes = (req: Request, res: Response) =>
-  Box.find(function(err: Error, doc: IBoxModel[]) {
-    return res.send(doc)
-  })
+  Box.find((err: Error, doc: IBoxModel[]) => res.send(doc))
