@@ -1,0 +1,11 @@
+# Apple related
+DS_Store
+
+# Build directory
+dist
+
+# Dependency directory
+node_modules
+
+# Env info
+.env
