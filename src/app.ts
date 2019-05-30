@@ -25,5 +25,6 @@ app.use(lusca.xssProtection(true))
  */
 app.get('/', homeController.index)
 app.get('/boxes', boxController.getBoxes)
+app.post('/boxes', boxController.addBox)
 
 export default app
