@@ -14,5 +14,10 @@ export const updateBox = (req: Request, res: Response) =>
   Box.findByIdAndUpdate(
     <String>req.params.id,
     { $set: req.body },
-    (err: Error, doc: IBoxModel) => res.send(err ? err : {})
+    (err: Error) => res.send(err ? err : {})
+  )
+
+export const deleteBox = (req: Request, res: Response) =>
+  Box.findByIdAndRemove(<String>req.params.id, (err: Error) =>
+    res.send(err ? err : {})
   )

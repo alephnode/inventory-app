@@ -27,5 +27,6 @@ app.get('/', homeController.index)
 app.get('/boxes', boxController.getBoxes)
 app.post('/boxes', boxController.addBox)
 app.put('/boxes/:id', boxController.updateBox)
+app.delete('/boxes/:id', boxController.deleteBox)
 
 export default app
