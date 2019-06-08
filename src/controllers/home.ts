@@ -5,4 +5,4 @@ import { Request, Response } from 'express'
  * Base route
  */
 export const index = (req: Request, res: Response) =>
-  res.send('Welcome to the Inventory API')
+  res.send('Inventory API - sward move June 2019 🌲')
