@@ -2,10 +2,11 @@
 DS_Store
 
 # Build directory
-dist
+**/dist
+**/.cache
 
 # Dependency directory
-node_modules
+**/node_modules
 
 # Env info
 .env
