@@ -4,7 +4,6 @@ body,
   --primary-bg-color: #fcfcfc;
   --primary-txt-color: #00171f;
 
-  overflow: hidden;
   height: 100vh;
   margin: 0px;
   background: var(--primary-bg-color);

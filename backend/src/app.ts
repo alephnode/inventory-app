@@ -2,6 +2,7 @@ import express from 'express'
 import compression from 'compression'
 import bodyParser from 'body-parser'
 import lusca from 'lusca'
+import cors from 'cors'
 import mongoose from 'mongoose'
 import { MONGODB_URI } from './util/secrets'
 
@@ -19,6 +20,7 @@ app.use(compression())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(lusca.xssProtection(true))
+app.use(cors())
 
 /**
  * Routes
