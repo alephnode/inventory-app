@@ -1,24 +1,24 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
-import React, { useState, useEffect } from 'react'
-import { boxListContainerStyles, boxStyles } from './styles'
+import React from 'react'
+import { boxListStyles } from './styles'
 
-function BoxList(props) {
-  const [boxes, setBoxes] = useState([])
+function BoxList() {
+  const [boxes, setBoxes] = React.useState([])
   const fetchBoxes = async () => {
     let res = await fetch('http://localhost:8811/boxes')
     res = await res.json()
     setBoxes(res)
   }
-  useEffect(() => {
+  React.useEffect(() => {
     fetchBoxes()
-  })
+  }, [])
   return (
-    <div css={boxListContainerStyles}>
+    <div css={boxListStyles.container}>
       {boxes.map(box => (
-        <div key={box._id} css={boxStyles}>
+        <div key={box._id} css={boxListStyles.box}>
           <p>{box.box}</p>
-          <p>{box.items}</p>
+          <p css={boxListStyles.boxItem}>{box.items}</p>
         </div>
       ))}
     </div>
