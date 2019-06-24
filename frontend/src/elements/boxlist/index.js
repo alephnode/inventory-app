@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 
 function BoxList(props) {
   const [boxes, setBoxes] = useState([])
-  const fetchBoxes = () => {
-    fetch('http://localhost:8811/boxes')
-      .then(res => res.json())
-      .then(result => setBoxes(result))
+  const fetchBoxes = async () => {
+    let res = await fetch('http://localhost:8811/boxes')
+    res = await res.json()
+    setBoxes(res)
   }
   useEffect(() => {
     fetchBoxes()
