@@ -12,9 +12,13 @@ body,
   background: var(--primary-bg-color);
   color: var(--primary-txt-color);
   font-family: 'Butler-ExtraBold', 'Times New Roman';
-  font-size: 1.8rem;
+  font-size: 1.3em;
   line-height: 1.4;
   text-align: center;
+}
+
+::selection {
+  background: var(--hover-color); /* WebKit/Blink Browsers */
 }
 
 @media screen and (max-width: 600px) {

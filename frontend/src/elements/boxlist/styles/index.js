@@ -10,10 +10,14 @@ const boxListStyles = {
   `,
   box: css`
     border: 1px solid var(--accent-color);
-    width: 15rem;
+    width: 18rem;
+    height: 7em;
     margin: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    font-family: 'Butler', 'Times New Roman';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.25rem 1rem;
+    font-family: 'Butler-ExtraBold', 'Times New Roman';
     color: var(--primary-color);
     cursor: pointer;
     :hover {

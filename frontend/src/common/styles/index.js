@@ -9,4 +9,10 @@ const baseStyles = css`
   color: var(--primary-txt-color);
 `
 
-export { baseStyles }
+const headerStyles = css`
+  font-size: 1.8rem;
+  position: fixed;
+  top: 16px;
+`
+
+export { baseStyles, headerStyles }

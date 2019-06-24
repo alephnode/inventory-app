@@ -2,12 +2,12 @@
 import { jsx, css } from '@emotion/core'
 import React from 'react'
 import BoxList from '../elements/boxlist'
-import { baseStyles } from '../common/styles'
+import { baseStyles, headerStyles } from '../common/styles'
 
-function Home(props) {
+function Home() {
   return (
     <div css={baseStyles}>
-      <div>Inventory App</div>
+      <div css={headerStyles}>Inventory App</div>
       <BoxList />
     </div>
   )
