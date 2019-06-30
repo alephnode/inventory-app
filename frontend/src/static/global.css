@@ -7,7 +7,6 @@ body,
   --accent-color: #8075ff;
   --hover-color: #b5fed9;
 
-  height: 100vh;
   margin: 1rem;
   background: var(--primary-bg-color);
   color: var(--primary-txt-color);
