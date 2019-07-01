@@ -20,6 +20,9 @@ const headerStyles = css`
   text-shadow: -3px 3px 0px var(--hover-color),
     -1px 1px 0px var(--primary-bg-color);
   padding: 0.5rem;
+  a {
+    text-decoration: none;
+  }
 `
 
 const imgStyles = css`
