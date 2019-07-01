@@ -7,11 +7,9 @@ import boxImg from '../../static/images/box-logo.png'
 
 function Logo() {
   return (
-    <div css={headerStyles}>
-      <Link to="/">
-        <span>Inventory App</span> <img css={imgStyles} src={boxImg} />
-      </Link>
-    </div>
+    <Link css={headerStyles} to="/">
+      <span>Inventory App</span> <img css={imgStyles} src={boxImg} />
+    </Link>
   )
 }
 

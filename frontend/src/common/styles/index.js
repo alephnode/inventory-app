@@ -12,6 +12,7 @@ const baseStyles = css`
 
 const headerStyles = css`
   display: flex;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
