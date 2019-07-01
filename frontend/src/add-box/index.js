@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
+import { formStyles } from './styles'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -26,7 +27,7 @@ function AddBox() {
   }
   return (
     <div id="form-container">
-      <form onSubmit={handleSubmit}>
+      <form css={formStyles} onSubmit={handleSubmit}>
         <label htmlFor="box">Box Name</label>
         <input id="box" type="text" name="box" onChange={handleChange} />
         <label htmlFor="items">Items</label>
