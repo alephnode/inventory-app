@@ -11,6 +11,7 @@ const baseStyles = css`
 `
 
 const headerStyles = css`
+  z-index: 1;
   display: flex;
   text-decoration: none;
   justify-content: center;
