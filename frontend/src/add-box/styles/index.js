@@ -6,4 +6,9 @@ const formStyles = css`
   flex-direction: column;
   align-items: center;
 `
-export { formStyles }
+
+const linkContainerStyles = css`
+  text-decoration: none;
+`
+
+export { formStyles, linkContainerStyles }

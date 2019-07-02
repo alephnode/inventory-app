@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
-import { formStyles } from './styles'
+import { formStyles, linkContainerStyles } from './styles'
 import React from 'react'
+import ActionButton from '../elements/action-button'
 import { Link } from 'react-router-dom'
 
 function AddBox() {
@@ -26,7 +27,7 @@ function AddBox() {
     return result
   }
   return (
-    <div id="form-container">
+    <div>
       <form css={formStyles} onSubmit={handleSubmit}>
         <label htmlFor="box">Box Name</label>
         <input id="box" type="text" name="box" onChange={handleChange} />
@@ -34,7 +35,9 @@ function AddBox() {
         <textarea id="items" name="items" onChange={handleChange} />
         <input type="submit" value="Add" />
       </form>
-      <Link to="/inventory">Back to inventory</Link>
+      <Link to="/inventory" css={linkContainerStyles}>
+        <ActionButton text="Back to inventory" />
+      </Link>
     </div>
   )
 }
