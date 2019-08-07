@@ -13,3 +13,5 @@ frontend/src/static/fonts
 
 # Env info
 .env
+
+coverage
