@@ -2,7 +2,8 @@ import { Request, Response } from 'express'
 import Box from '../models/Box'
 import IBoxModel from '../types/IBoxModel'
 
-export const stripLetters = (w: String) => parseInt(w.replace(/\D/g, ''))
+export const stripLetters = (w: String): number =>
+  parseInt(w.replace(/\D/g, ''))
 
 export const getBoxes = (_1: Request, res: Response) =>
   Box.find((err: Error, doc: IBoxModel[]) =>
