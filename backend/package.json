@@ -4,8 +4,8 @@
   "description": "Backend for inventory app",
   "main": "dist/server.js",
   "scripts": {
-    "start": "node dist/server.js",
-    "watch": "nodemon dist/server.js",
+    "start": "node dist/src/server.js",
+    "watch": "nodemon dist/src/server.js",
     "test": "jest",
     "build": "tsc",
     "watch-ts": "tsc -w",
