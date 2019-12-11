@@ -16,7 +16,7 @@ export const getBoxes = (_1: Request, res: Response) =>
   )
 
 export const addBox = (req: Request, res: Response) => {
-  const newBox = new Box(req.body)
+  const newBox: IBoxModel = new Box(req.body)
   return newBox.save((err: Error, doc: IBoxModel) => res.send(doc))
 }
 
